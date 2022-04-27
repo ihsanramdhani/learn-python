@@ -2,6 +2,11 @@ def fib(n):
     """
     Compute the nth Fibonacci number, n >= 2
 
+    >>> fib(8)
+    13
+    >>> fib(3)
+    1
+
     """
     prev, curr = 0, 1
     k = 2
@@ -10,4 +15,6 @@ def fib(n):
         k += 1
     return curr
 
-help(fib)
+if __name__ == '__main__':
+    import doctest
+    doctest.testmod()
